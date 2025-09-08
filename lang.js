@@ -33,20 +33,6 @@ const translations = {
                 location: "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
                 date: "۱۴ سپتامبر",
                 time: "۱۸:۰۰ - ۲۰:۰۰"
-            },
-            event2: {
-                title: "کارگاه آموزش تار",
-                desc: "کارگاه فشرده آموزش تار برای سطح مبتدی",
-                location: "آموزشگاه راستین‌فر",
-                date: "۲۲ اردیبهشت",
-                time: "۱۶:۰۰"
-            },
-            event3: {
-                title: "شب موسیقی ایرانی",
-                desc: "اجرای گروهی با همراهی هنرمندان برجسته موسیقی ایرانی",
-                location: "تالار رودکی",
-                date: "۵ خرداد",
-                time: "۲۱:۰۰"
             }
         },
         news: {
@@ -87,22 +73,18 @@ const translations = {
             badge: "آلبوم",
             album1: {
                 title: "در مسیر فصل‌ها",
-                desc: "آلبومی با الهام از تغییرات طبیعت و گذر زمان",
                 year: "۱۳۹۳"
             },
             album2: {
                 title: "گمگشته",
-                desc: "کاوش در مفاهیم گم‌گشتگی و یافتن راه",
                 year: "۱۳۹۹"
             },
             album3: {
                 title: "حکایت عشق",
-                desc: "روایتی از عشق در موسیقی ایرانی",
                 year: "۱۴۰۰"
             },
             album4: {
                 title: "شب و خاموشی",
-                desc: "تامل در سکوت شب و زیبایی‌های آن",
                 year: "۱۳۹۵"
             }
         },
@@ -205,22 +187,18 @@ const translations = {
             badge: "Album",
             album1: {
                 title: "In the Path of Seasons",
-                desc: "An album inspired by nature's changes and the passage of time",
                 year: "2014"
             },
             album2: {
                 title: "The Lost",
-                desc: "Exploring concepts of being lost and finding one's way",
                 year: "2020"
             },
             album3: {
                 title: "The Tale of Love",
-                desc: "A narrative of love in Iranian music",
                 year: "2021"
             },
             album4: {
                 title: "Night and Silence",
-                desc: "Contemplation on the silence of the night and its beauties",
                 year: "2016"
             }
         },
