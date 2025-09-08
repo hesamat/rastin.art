@@ -152,7 +152,7 @@ body.en {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -160,7 +160,6 @@ body.en {
     justify-content: center;
     text-align: center;
     color: white;
-    border-radius: 0 0 50px 50px;
 }
 
 .hero-carousel {
