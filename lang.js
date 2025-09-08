@@ -15,7 +15,7 @@ const translations = {
         bio: {
             title: "درباره استاد راستین‌فر",
             p1: "علیرضا راستین‌فر، آهنگساز، نوازنده و مدرس برجسته ساز و آواز ایرانی است. او دانش موسیقی خود را در محضر بزرگ‌ترین اساتید زمان خود تکمیل کرده و در نوازندگی تار از اساتیدی چون هوشنگ ظریف، محمدرضا لطفی، ارشد طهماسبی، کیوان ساکت و مسعود شعاری بهره برده است.",
-            p2: "در زمینه آواز، ردیف آوازی قدیم را نزد استاد حاتم عسگری فراهانی فرا گرفته و ظرایف خوانندگی را از محضر آقایان امیر شیخ‌الاسلام و رامبد صدیف آموخته است. فعالیت‌های حرفه‌ای او طیف گسترده‌ای از پژوهش، اجرا، آموزش و سازسازی را در بر می‌گیرد."
+            p2: "در زمینه آواز، ردیف آوازی را نزد استاد حاتم عسگری فراهانی فرا گرفته و ظرایف خوانندگی را از محضر آقایان امیر شیخ‌الاسلام و رامبد صدیف آموخته است. فعالیت‌های حرفه‌ای او طیف گسترده‌ای از پژوهش، اجرا، آموزش و سازسازی را در بر می‌گیرد."
         },
         classes: {
             title: "آموزش",
@@ -133,7 +133,7 @@ const translations = {
         bio: {
             title: "About Master Rastinfar",
             p1: "Alireza Rastinfar is a prominent composer, performer, and master of Iranian instruments and vocals. He completed his musical education under the greatest masters of his time and learned to play the Tar from masters such as Houshang Zarif, Mohammad Reza Lotfi, Arshad Tahmasebi, Kayvan Saket, and Masoud Shariari.",
-            p2: "In the field of vocals, he learned the old vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
+            p2: "In the field of vocals, he learned the vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
         },
         classes: {
             title: "Teaching Classes",
