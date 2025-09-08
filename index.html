@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علیرضا راستین‌فر | استاد برجسته موسیقی ایرانی</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/irenyekan" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="lang.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#programs" data-i18n="nav.programs">برنامه‌ها</a></li>
+            <li><a href="#education" data-i18n="nav.education">آموزش</a></li>
+            <li><a href="#albums" data-i18n="nav.albums">آلبوم‌ها</a></li>
+            <li><a href="#about" data-i18n="nav.about">درباره</a></li>
+            <li><a href="#research" data-i18n="nav.research">پژوهش‌ها</a></li>
+        </ul>
+        <button class="lang-toggle" id="langToggle">EN</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active">
+                <img src="hero-1.jpeg" alt="Music Performance">
+            </div>
+            <div class="carousel-slide">
+                <img src="hero-2.jpeg" alt="Music Performance">
+            </div>
+            <div class="carousel-slide">
+                <img src="hero-3.jpg" alt="Music Performance">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-i18n="hero.name">علیرضا راستین‌فر</h1>
+            <div class="hero-subtitle" data-i18n="hero.subtitle">آهنگساز، نوازنده و مدرس ساز و آواز ایرانی</div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="about" class="section">
+        <div class="bio-section">
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="portrait.jpeg" alt="علیرضا راستین‌فر">
+                </div>
+                <div class="bio-text">
+                    <h3 data-i18n="bio.title">درباره استاد راستین‌فر</h3>
+                    <p data-i18n="bio.p1">
+                        علیرضا راستین‌فر، آهنگساز، نوازنده و مدرس برجسته ساز و آواز ایرانی است. او دانش موسیقی خود را در
+                        محضر بزرگ‌ترین اساتید زمان خود تکمیل کرده و در نوازندگی تار از اساتیدی چون هوشنگ ظریف، محمدرضا
+                        لطفی، ارشد طهماسبی، کیوان ساکت و مسعود شعاری بهره برده است.
+                    </p>
+                    <p data-i18n="bio.p2">
+                        در زمینه آواز، ردیف آوازی قدیم را نزد استاد حاتم عسگری فراهانی فرا گرفته و ظرایف خوانندگی را از
+                        محضر آقایان امیر شیخ‌الاسلام و رامبد صدیف آموخته است. فعالیت‌های حرفه‌ای او طیف گسترده‌ای از
+                        پژوهش، اجرا، آموزش و سازسازی را در بر می‌گیرد.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="programs" class="section">
+        <h2 class="section-title" data-i18n="events.title">برنامه‌ها</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="event-day" data-i18n="events.event1.date">۱۴ سپتامبر ۲۰۲۵</span>
+                </div>
+                <img src="event-1.jpeg" alt="کنسرت بهار" class="event-img">
+                <div class="event-content">
+                    <h3 class="event-title" data-i18n="events.event1.title"> بنیاد نیکوکاری یارا</h3>
+                    <!-- <p class="event-desc" data-i18n="events.event1.desc">
+                    </p> -->
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="events.event1.location">Lily Lee Spirit Room, 2121 Marine Dr, West
+                            Vancouver</span>
+                    </div>
+                    <div class="event-time">
+                        <i class="fas fa-clock"></i>
+                        <span data-i18n="events.event1.time">ساعت ۶ تا ۸</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Albums Section -->
+    <section id="albums" class="section">
+        <h2 class="section-title" data-i18n="albums.title">آلبوم‌ها</h2>
+        <div class="albums-grid">
+            <div class="album-card">
+                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <img src="dar-masire-faslha.jpg" alt="در مسیر فصل‌ها" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.album1.title">در مسیر فصل‌ها</h3>
+                    <p class="album-desc" data-i18n="albums.album1.desc">آلبومی با الهام از تغییرات طبیعت و گذر زمان</p>
+                    <div class="album-year" data-i18n="albums.album1.year">۱۳۹۸</div>
+                </div>
+            </div>
+            <!-- 
+            <div class="album-card">
+                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    alt="گمگشته" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.album2.title">گمگشته</h3>
+                    <p class="album-desc" data-i18n="albums.album2.desc">کاوش در مفاهیم گم‌گشتگی و یافتن راه</p>
+                    <div class="album-year" data-i18n="albums.album2.year">۱۳۹۹</div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    alt="حکایت عشق" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.album3.title">حکایت عشق</h3>
+                    <p class="album-desc" data-i18n="albums.album3.desc">روایتی از عشق در موسیقی ایرانی</p>
+                    <div class="album-year" data-i18n="albums.album3.year">۱۴۰۰</div>
+                </div>
+            </div> -->
+
+            <div class="album-card">
+                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <img src="shab-o-khamooshi.jpg" alt="شب و خاموشی" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.album4.title">شب و خاموشی</h3>
+                    <p class="album-desc" data-i18n="albums.album4.desc">تامل در سکوت شب و زیبایی‌های آن</p>
+                    <div class="album-year" data-i18n="albums.album4.year">۱۴۰۱</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Works -->
+    <section id="research" class="section">
+        <h2 class="section-title" data-i18n="research.title">پژوهش‌ها</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="research-img">
+                    <img src="darvishkhan.jpg" alt="تدوین آثار درویش‌خان">
+                </div>
+                <div class="research-content">
+                    <h3 class="research-title" data-i18n="research.work1.title">تدوین آثار درویش‌خان</h3>
+                    <p class="research-desc" data-i18n="research.work1.desc">
+                        جمع‌آوری و تدوین آثار استاد درویش‌خان، یکی از بزرگ‌ترین اساتید موسیقی ایرانی و احیاء میراث هنری
+                        ایشان برای نسل‌های آینده.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-img">
+                    <img src="note.jpg" alt="آوانگاری ردیف آوازی">
+                </div>
+                <div class="research-content">
+                    <h3 class="research-title" data-i18n="research.work2.title">آوانگاری ردیف آوازی</h3>
+                    <p class="research-desc" data-i18n="research.work2.desc">
+                        آوانگاری بخشی از ردیف آوازی استاد رامبد صدیف و ثبت نت‌های موسیقی برای حفظ امانت‌داری در انتقال
+                        این میراث ارزشمند.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-img">
+                    <img src="setar.jpg" alt="سازسازی سه‌تار">
+                </div>
+                <div class="research-content">
+                    <h3 class="research-title" data-i18n="research.work3.title">سازسازی سه‌تار</h3>
+                    <p class="research-desc" data-i18n="research.work3.desc">
+                        تأسیس کارگاه سازسازی پس از گذراندن دوره تخصصی سه‌تار در وزارت میراث فرهنگی و گردشگری و ساخت
+                        سازهای اصیل با کیفیت بالا.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Quote Section -->
+    <section class="section">
+        <div class="quote-section">
+            <div class="quote-bg"></div>
+            <div class="quote-content">
+                <p class="quote-text" data-i18n="quote.text">
+                    گفتاورد
+                </p>
+                <div class="quote-author" data-i18n="quote.author">علیرضا راستین‌فر</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.institute">مؤسسه نغمه همایون راستین</h3>
+                <p data-i18n="footer.email">ایمیل: </p>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-i18n="footer.follow">دنبال کنید</h3>
+                <p data-i18n="footer.social">ما را در شبکه‌های اجتماعی دنبال کنید:</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright" data-i18n="footer.copyright">
+            © ۱۴۰۴ - تمامی حقوق مادی و معنوی این وبسایت متعلق به مؤسسه فرهنگی هنری نغمه همایون راستین است
+        </div>
+    </footer>
+</body>
+
+</html>
