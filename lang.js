@@ -133,7 +133,7 @@ const translations = {
         bio: {
             title: "About Master Rastinfar",
             p1: "Alireza Rastinfar is a prominent composer, performer, and master of Iranian instruments and vocals. He completed his musical education under the greatest masters of his time and learned to play the Tar from masters such as Houshang Zarif, Mohammad Reza Lotfi, Arshad Tahmasebi, Kayvan Saket, and Masoud Shariari.",
-            p2: "In the field of vocals, he learned the vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
+            p2: "In the field of vocals, he learned the vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sodaif. His professional activities encompass a wide range of research, performance, education, and instrument making."
         },
         classes: {
             title: "Teaching Classes",
@@ -193,7 +193,7 @@ const translations = {
             },
             work2: {
                 title: "Notation of Vocal Radif",
-                desc: "Notation of part of Master Rambod Sadif's vocal Radif and recording musical notes to preserve integrity in transmitting this valuable heritage."
+                desc: "Notation of part of Master Rambod Sodaif's vocal Radif and recording musical notes to preserve integrity in transmitting this valuable heritage."
             },
             work3: {
                 title: "Setar Instrument Making",
