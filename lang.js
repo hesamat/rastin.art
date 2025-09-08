@@ -108,7 +108,7 @@ const translations = {
             album1: {
                 title: "در مسیر فصل‌ها",
                 desc: "آلبومی با الهام از تغییرات طبیعت و گذر زمان",
-                year: "۱۳۹۸"
+                year: "۱۳۹۳"
             },
             album2: {
                 title: "گمگشته",
@@ -123,7 +123,7 @@ const translations = {
             album4: {
                 title: "شب و خاموشی",
                 desc: "تامل در سکوت شب و زیبایی‌های آن",
-                year: "۱۴۰۱"
+                year: "۱۳۹۵"
             }
         },
         quote: {
@@ -132,7 +132,7 @@ const translations = {
         },
         footer: {
             institute: "مؤسسه نغمه همایون راستین",
-            email: "ایمیل: info@rastinfar-music.ir",
+            email: "ایمیل:",
             follow: "دنبال کنید",
             social: "ما را در شبکه‌های اجتماعی دنبال کنید:",
             copyright: "© ۱۴۰۴ - تمامی حقوق مادی و معنوی این وبسایت متعلق به مؤسسه فرهنگی هنری نغمه همایون راستین است"
@@ -140,11 +140,11 @@ const translations = {
     },
     en: {
         nav: {
-            programs: "Programs",
+            programs: "Events",
             education: "Education",
             albums: "Albums",
             about: "About",
-            news: "News"
+            research: "Research"
         },
         hero: {
             name: "Alireza Rastinfar",
@@ -157,31 +157,11 @@ const translations = {
         },
         classes: {
             title: "Educational Classes",
-            btn: "Register for Class",
-            beginner: {
-                title: "Beginner Tar Class",
-                level: "Beginner Level",
-                desc: "Introduction to the Tar instrument, principles of playing, and learning basic Radifs",
-                feature1: "Introduction to instrument and notation",
-                feature2: "Dashti and Shur Radifs",
-                feature3: "Practical exercises"
+            work1: {
+                title: "Delaram Music",
+                desc: "Specialized training in Iranian vocals and Tar playing from beginner to advanced levels, including techniques, Radif, and improvisation."
             },
-            advanced: {
-                title: "Advanced Tar Class",
-                level: "Advanced Level",
-                desc: "Advanced Tar playing techniques and deep analysis of Dastgahi Radifs",
-                feature1: "Complete Radifs of Dastgahs",
-                feature2: "Tasnifs and Chaharmezrabs",
-                feature3: "Improvisation"
-            },
-            vocal: {
-                title: "Iranian Vocal Class",
-                level: "Beginner to Advanced",
-                desc: "Teaching the principles of Iranian singing and learning vocal Radif",
-                feature1: "Breathing techniques",
-                feature2: "Old vocal Radif",
-                feature3: "Tasnif singing"
-            }
+            btn: "Register for Class"
         },
         events: {
             title: "Events",
@@ -246,7 +226,7 @@ const translations = {
             album1: {
                 title: "In the Path of Seasons",
                 desc: "An album inspired by nature's changes and the passage of time",
-                year: "2019"
+                year: "2014"
             },
             album2: {
                 title: "The Lost",
@@ -261,7 +241,7 @@ const translations = {
             album4: {
                 title: "Night and Silence",
                 desc: "Contemplation on the silence of the night and its beauties",
-                year: "2022"
+                year: "2016"
             }
         },
         quote: {

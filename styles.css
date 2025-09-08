@@ -80,6 +80,60 @@ body.en {
     width: 100%;
 }
 
+/* Mobile nav toggle (hamburger) */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-inline-start: -10px;
+}
+
+.menu-toggle .bar,
+.menu-toggle .bar::before,
+.menu-toggle .bar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.menu-toggle .bar {
+    top: 50%;
+}
+
+.menu-toggle .bar::before {
+    top: -8px;
+}
+
+.menu-toggle .bar::after {
+    top: 8px;
+}
+
+/* Animate to X when open */
+.navbar.open .menu-toggle .bar {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.navbar.open .menu-toggle .bar::before {
+    transform: translateX(-50%) rotate(-90deg);
+    top: 0;
+}
+
+.navbar.open .menu-toggle .bar::after {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
 .lang-toggle {
     background-color: var(--secondary);
     color: var(--primary);
@@ -197,7 +251,7 @@ body.en {
 /* Section Styles */
 .section {
     padding: 5rem 5%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     padding-top: 2rem;
     max-width: 1400px;
     margin: 0 auto;
@@ -230,7 +284,7 @@ body.en {
     border-radius: 30px;
     padding: 3rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .bio-content {
@@ -792,6 +846,55 @@ body.en {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    /* Mobile navbar */
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .navbar {
+        gap: 0.5rem;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        inset-inline: 0;
+        background: linear-gradient(135deg, var(--primary) 0%, #3e7f69 100%);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 16px 16px;
+    }
+
+    .navbar.open ul {
+        display: flex;
+        max-height: 60vh;
+    }
+
+    .navbar li {
+        margin: 0.25rem 0;
+    }
+
+    .navbar a {
+        padding: 0.75rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    .lang-toggle {
+        margin-inline-start: auto;
+        z-index: 1;
+    }
+
+    .hero {
+        margin-top: 0.25rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
