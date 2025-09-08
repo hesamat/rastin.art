@@ -28,11 +28,11 @@ const translations = {
         events: {
             title: "برنامه‌ها",
             event1: {
-                title: "کنسرت بهار",
-                desc: "اجرای قطعاتی از آلبوم‌های در مسیر فصل‌ها و حکایت عشق",
-                location: "تالار وحدت",
-                date: "۱۵ فروردین",
-                time: "۲۰:۰۰"
+                title: "بنیاد نیکوکاری یارا",
+                desc: "",
+                location: "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
+                date: "۱۴ سپتامبر",
+                time: "۱۸:۰۰ - ۲۰:۰۰"
             },
             event2: {
                 title: "کارگاه آموزش تار",
