@@ -3,7 +3,7 @@ const translations = {
     fa: {
         nav: {
             programs: "برنامه‌ها",
-            education: "آموزش",
+            teaching: "آموزش",
             albums: "آلبوم‌ها",
             about: "درباره",
             news: "اخبار"
@@ -141,7 +141,7 @@ const translations = {
     en: {
         nav: {
             programs: "Events",
-            education: "Education",
+            teaching: "Teaching",
             albums: "Albums",
             about: "About",
             research: "Research"
@@ -156,7 +156,7 @@ const translations = {
             p2: "In the field of vocals, he learned the old vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
         },
         classes: {
-            title: "Educational Classes",
+            title: "Teaching Classes",
             work1: {
                 title: "Delaram Music",
                 desc: "Specialized training in Iranian vocals and Tar playing from beginner to advanced levels, including techniques, Radif, and improvisation."
