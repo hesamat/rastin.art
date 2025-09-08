@@ -199,7 +199,6 @@ body.en {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
     z-index: -1;
-    border-radius: 0 0 50px 50px;
 }
 
 .hero-content {
