@@ -153,7 +153,7 @@ const translations = {
         bio: {
             title: "About Master Rastinfar",
             p1: "Alireza Rastinfar is a prominent composer, performer, and master of Iranian instruments and vocals. He completed his musical education under the greatest masters of his time and learned to play the Tar from masters such as Houshang Zarif, Mohammad Reza Lotfi, Arshad Tahmasebi, Kayvan Saket, and Masoud Shariari.",
-            p2: "In the field of vocals, he learned the old vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Messrs. Amir Sheikh al-Islam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
+            p2: "In the field of vocals, he learned the old vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sadif. His professional activities encompass a wide range of research, performance, education, and instrument making."
         },
         classes: {
             title: "Educational Classes",
@@ -186,11 +186,11 @@ const translations = {
         events: {
             title: "Events",
             event1: {
-                title: "Spring Concert",
-                desc: "Performing pieces from the albums \"In the Path of Seasons\" and \"The Tale of Love\"",
-                location: "Vahdat Hall",
-                date: "April 4",
-                time: "20:00"
+                title: "Yara Charity Event",
+                desc: "",
+                location: "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
+                date: "September 14",
+                time: "18:00 - 20:00"
             },
             event2: {
                 title: "Tar Workshop",
@@ -270,10 +270,10 @@ const translations = {
         },
         footer: {
             institute: "Naghmeh Homayoon Rastin Cultural Institute",
-            email: "Email: info@rastinfar-music.ir",
+            email: "Email: ",
             follow: "Follow Us",
             social: "Follow us on social media:",
-            copyright: "© 2023 - All material and intellectual rights of this website belong to Naghmeh Homayoon Rastin Cultural Institute"
+            copyright: "© 2025 - All material and intellectual rights of this website belong to Naghmeh Homayoon Rastin Cultural Institute"
         }
     }
 };
