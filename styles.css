@@ -82,24 +82,6 @@
     --font-fa-display: 'Noto Naskh Arabic', 'Vazirmatn', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-page: #171412;
-        --bg-surface: #544239;
-        --color-parchment: #211d1b;
-        --text-main: #f5efe9;
-        --text-soft: #c9bfb7;
-        --primary: #e2bd96;
-        --secondary: #4c9587;
-        --accent: #e8b648;
-        --border-soft: rgba(245, 239, 233, .12);
-        --border-strong: rgba(245, 239, 233, .28);
-        --focus-ring: 0 0 0 3px rgba(232, 182, 72, .45);
-        --color-shadow: rgba(0, 0, 0, .4);
-        --color-shadow-strong: rgba(0, 0, 0, .6);
-    }
-}
-
 /* Base Reset */
 * {
     margin: 0;
