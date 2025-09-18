@@ -1,14 +1,14 @@
 :root {
-    --primary: #2E5E4E;
-    /* Cypress Green */
-    --secondary: #e19668;
-    /* Terracotta */
-    --accent: #E95B7C;
-    /* Persian Rose */
-    --light: #F7F3E9;
-    /* Ivory Silk */
-    --dark: #3E2723;
-    /* Dark Earth */
+    --primary: #ca6c1a;
+    /* Burnt Sienna */
+    --secondary: #f0d0d9;
+    /* Dusty Rose */
+    --accent: #F6D55C;
+    /* Sunflower Yellow */
+    --light: #F5E6D3;
+    /* Desert Sand */
+    --dark: #5D4037;
+    /* Coffee Bean */
     --white: #FFFFFF;
 }
 
@@ -197,7 +197,7 @@ body.en {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     z-index: -1;
 }
 
@@ -320,6 +320,25 @@ body.en {
     line-height: 1.8;
     color: #555;
     margin-bottom: 1rem;
+}
+
+.bio-btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.bio-btn:hover {
+    background-color: #5A7A4E;
+    transform: translateY(-2px);
 }
 
 /* Classes Section */

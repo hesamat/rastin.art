@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "programs": "Events",
+    "teaching": "Teaching",
+    "albums": "Albums",
+    "about": "About",
+    "research": "Research"
+  },
+  "hero": {
+    "name": "Alireza Rastinfar",
+    "subtitle": "Composer, Performer and Master of Iranian Instruments and Vocals"
+  },
+  "bio": {
+    "title": "About Master Rastinfar",
+    "p1": "Alireza Rastinfar is a prominent composer, performer, and master of Iranian instruments and vocals. He completed his musical education under the greatest masters of his time and learned to play the Tar from masters such as Houshang Zarif, Mohammad Reza Lotfi, Arshad Tahmasebi, Kayvan Saket, and Masoud Shariari.",
+    "p2": "In the field of vocals, he learned the vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sodaif. His professional activities encompass a wide range of research, performance, education, and instrument making.",
+    "readMore": "Read More"
+  },
+  "events": {
+    "title": "Events",
+    "event1": {
+      "title": "Yara Charity Foundation",
+      "desc": "",
+      "location": "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
+      "date": "14 September 2025",
+      "time": "18:00 - 20:00"
+    }
+  },
+  "albums": {
+    "title": "Albums & Singles",
+    "badgeAlbum": "Album",
+    "badgeSingle": "Single",
+    "album1": { "title": "In the Path of Seasons", "year": "2014" },
+    "album4": { "title": "Night and Silence", "year": "2016" },
+    "songPorsesh": { "title": "Tasnif: Porsesh", "year": "2016" },
+    "songAyeneBidar": { "title": "Tasnif: The Wakened Mirror", "year": "2017" }
+  },
+  "research": {
+    "title": "Research",
+    "work1": {
+      "title": "Compiling Darvish Khan's Works",
+      "desc": "Collecting and arranging the works of Master Gholamhossein Darvish, one of the great figures of Iranian music, reviving his artistic heritage for Setar."
+    },
+    "work2": {
+      "title": "Notation of Vocal Radif",
+      "desc": "Transcription of part of Master Rambod Sodaif's vocal Radif to preserve and transmit this valuable heritage."
+    },
+    "work3": {
+      "title": "Setar Craft Workshop",
+      "desc": "Establishing a Setar-making workshop after completing a specialized course at the Ministry of Cultural Heritage and producing authentic high-quality instruments."
+    },
+    "woodwork": {
+      "title": "Wood Figures & Dolls Workshop",
+      "desc": "Establishing a workshop for making wooden figures and dolls licensed by the Technical and Vocational Organization."
+    }
+  },
+  "classes": {
+    "title": "Teaching",
+    "delaram": {
+      "title": "Delaram Music Vancouver",
+      "desc": "Specialized training in vocals and Tar & Setar from beginner to advanced levels including techniques, Radif and improvisation."
+    },
+    "nazanin": {
+      "title": "Nazanin Academy Vancouver",
+      "desc": "Specialized training in vocal Radif, Tasnif singing and Tonbak."
+    },
+    "chakad": {
+      "title": "Chakad Music School Tehran",
+      "desc": "Online instruction in Tar, Setar and vocal Radif."
+    },
+    "tvto": {
+      "title": "Technical & Vocational Center",
+      "desc": "Specialized training in wooden doll making, marquetry, carving, fretwork, pyrography and more."
+    }
+  },
+  "quote": {
+    "text": "Music is the language of the soul, and Radif is the thousand-year-old treasure of our culture. Our duty is not just to play, but to understand and transmit this precious heritage to future generations. Every stroke on the Tar should be a narrative of love, history, and wisdom of this land.",
+    "author": "Alireza Rastinfar"
+  },
+  "footer": {
+    "follow": "Follow Us",
+    "social": "Follow us on social media:",
+    "copyright": "© 2025 - All material and intellectual rights of this website belong to Naghmeh Homayoon Rastin Cultural Institute"
+  }
+}

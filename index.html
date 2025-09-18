@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <noscript
+        style="display:block;padding:1rem;background:#ffeded;color:#a00;text-align:center;font-family:system-ui, sans-serif;">
+        This site requires JavaScript to load its multilingual content. لطفاً جاوااسکریپت مرورگر خود را فعال کنید.
+    </noscript>
     <!-- Navbar -->
     <nav class="navbar">
         <button class="menu-toggle" id="menuToggle" aria-label="باز و بسته کردن منو" aria-expanded="false"
@@ -22,11 +26,11 @@
             <span class="bar"></span>
         </button>
         <ul id="navLinks">
-            <li><a href="#about" data-i18n="nav.about">درباره</a></li>
-            <li><a href="#programs" data-i18n="nav.programs">برنامه‌ها</a></li>
-            <li><a href="#albums" data-i18n="nav.albums">آلبوم‌ها</a></li>
-            <li><a href="#research" data-i18n="nav.research">پژوهش‌ها</a></li>
-            <li><a href="#teaching" data-i18n="nav.teaching">آموزش</a></li>
+            <li><a href="#about" data-i18n="nav.about"></a></li>
+            <li><a href="#programs" data-i18n="nav.programs"></a></li>
+            <li><a href="#albums" data-i18n="nav.albums"></a></li>
+            <li><a href="#research" data-i18n="nav.research"></a></li>
+            <li><a href="#teaching" data-i18n="nav.teaching"></a></li>
         </ul>
         <button class="lang-toggle" id="langToggle">EN</button>
     </nav>
@@ -43,8 +47,8 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 data-i18n="hero.name">علیرضا راستین‌فر</h1>
-            <div class="hero-subtitle" data-i18n="hero.subtitle">آهنگساز، نوازنده و مدرس ساز و آواز ایرانی</div>
+            <h1 data-i18n="hero.name"></h1>
+            <div class="hero-subtitle" data-i18n="hero.subtitle"></div>
         </div>
         <div class="carousel-indicators">
             <span class="indicator active" data-slide="0"></span>
@@ -60,17 +64,10 @@
                     <img src="portrait.jpeg" alt="علیرضا راستین‌فر">
                 </div>
                 <div class="bio-text">
-                    <h3 data-i18n="bio.title">درباره استاد راستین‌فر</h3>
-                    <p data-i18n="bio.p1">
-                        علیرضا راستین‌فر، آهنگساز، نوازنده و مدرس برجسته ساز و آواز ایرانی است. او دانش موسیقی خود را در
-                        محضر بزرگ‌ترین اساتید زمان خود تکمیل کرده و در نوازندگی تار از اساتیدی چون هوشنگ ظریف، محمدرضا
-                        لطفی، ارشد طهماسبی، کیوان ساکت و مسعود شعاری بهره برده است.
-                    </p>
-                    <p data-i18n="bio.p2">
-                        در زمینه آواز، ردیف آوازی را نزد استاد حاتم عسگری فراهانی فرا گرفته و ظرایف خوانندگی را از
-                        محضر آقایان امیر شیخ‌الاسلام و رامبد صدیف آموخته است. فعالیت‌های حرفه‌ای او طیف گسترده‌ای از
-                        پژوهش، اجرا، آموزش و سازسازی را در بر می‌گیرد.
-                    </p>
+                    <h3 data-i18n="bio.title"></h3>
+                    <p data-i18n="bio.p1"></p>
+                    <p data-i18n="bio.p2"></p>
+                    <button class="bio-btn" id="bioModalBtn" data-i18n="bio.readMore"></button>
                 </div>
             </div>
         </div>
@@ -78,24 +75,23 @@
 
     <!-- Events Section -->
     <section id="programs" class="section">
-        <h2 class="section-title" data-i18n="events.title">برنامه‌ها</h2>
+        <h2 class="section-title" data-i18n="events.title"></h2>
         <div class="events-grid">
             <div class="event-card">
                 <div class="event-date">
-                    <span class="event-day" data-i18n="events.event1.date">۱۴ سپتامبر ۲۰۲۵</span>
+                    <span class="event-day" data-i18n="events.event1.date"></span>
                 </div>
                 <img src="event-1.jpeg" alt="بنیاد نیکوکاری یارا" class="event-img">
                 <div class="event-content">
-                    <h3 class="event-title" data-i18n="events.event1.title"> بنیاد نیکوکاری یارا</h3>
+                    <h3 class="event-title" data-i18n="events.event1.title"></h3>
                     <p class="event-desc" data-i18n="events.event1.desc"></p>
                     <div class="event-location">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span data-i18n="events.event1.location">Lily Lee Spirit Room, 2121 Marine Dr, West
-                            Vancouver</span>
+                        <span data-i18n="events.event1.location"></span>
                     </div>
                     <div class="event-time">
                         <i class="fas fa-clock"></i>
-                        <span data-i18n="events.event1.time">۱۸:۰۰ - ۲۰:۰۰</span>
+                        <span data-i18n="events.event1.time"></span>
                     </div>
                 </div>
             </div>
@@ -105,45 +101,43 @@
 
     <!-- Albums Section -->
     <section id="albums" class="section">
-        <h2 class="section-title" data-i18n="albums.title">آلبوم‌ها</h2>
+        <h2 class="section-title" data-i18n="albums.title"></h2>
         <div class="albums-grid">
             <div class="album-card">
-                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <div class="album-badge" data-i18n="albums.badgeAlbum"></div>
                 <img src="dar-masire-faslha.jpg" alt="در مسیر فصل‌ها" class="album-img">
                 <div class="album-info">
-                    <h3 class="album-title" data-i18n="albums.album1.title">در مسیر فصل‌ها</h3>
-                    <div class="album-year" data-i18n="albums.album1.year">۱۳۹۳</div>
-                </div>
-            </div>
-            <!-- 
-            <div class="album-card">
-                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
-                <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                    alt="گمگشته" class="album-img">
-                <div class="album-info">
-                    <h3 class="album-title" data-i18n="albums.album2.title">گمگشته</h3>
-                    <p class="album-desc" data-i18n="albums.album2.desc">کاوش در مفاهیم گم‌گشتگی و یافتن راه</p>
-                    <div class="album-year" data-i18n="albums.album2.year">۱۳۹۹</div>
+                    <h3 class="album-title" data-i18n="albums.album1.title"></h3>
+                    <div class="album-year" data-i18n="albums.album1.year"></div>
                 </div>
             </div>
 
             <div class="album-card">
-                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                    alt="حکایت عشق" class="album-img">
-                <div class="album-info">
-                    <h3 class="album-title" data-i18n="albums.album3.title">حکایت عشق</h3>
-                    <p class="album-desc" data-i18n="albums.album3.desc">روایتی از عشق در موسیقی ایرانی</p>
-                    <div class="album-year" data-i18n="albums.album3.year">۱۴۰۰</div>
-                </div>
-            </div> -->
-
-            <div class="album-card">
-                <div class="album-badge" data-i18n="albums.badge">آلبوم</div>
+                <div class="album-badge" data-i18n="albums.badgeAlbum"></div>
                 <img src="shab-o-khamooshi.jpg" alt="شب و خاموشی" class="album-img">
                 <div class="album-info">
-                    <h3 class="album-title" data-i18n="albums.album4.title">شب و خاموشی</h3>
-                    <div class="album-year" data-i18n="albums.album4.year">۱۳۹۵</div>
+                    <h3 class="album-title" data-i18n="albums.album4.title"></h3>
+                    <div class="album-year" data-i18n="albums.album4.year"></div>
+                </div>
+            </div>
+
+            <div class="album-card" style="cursor: pointer;"
+                onclick="window.open('https://www.youtube.com/watch?v=OLIcHsn5J20')">
+                <div class="album-badge" data-i18n="albums.badgeSingle"></div>
+                <img src="porsesh.jpg" alt="تصنیف پرسش" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.songPorsesh.title"></h3>
+                    <div class="album-year" data-i18n="albums.songPorsesh.year"></div>
+                </div>
+            </div>
+
+            <div class="album-card" style="cursor: pointer;"
+                onclick="window.open('https://www.youtube.com/watch?v=1vk1-bSe5yI')">
+                <div class="album-badge" data-i18n="albums.badgeSingle"></div>
+                <img src="ayene-bidar.png" alt="تصنیف آیینه‌ی بیدار" class="album-img">
+                <div class="album-info">
+                    <h3 class="album-title" data-i18n="albums.songAyeneBidar.title"></h3>
+                    <div class="album-year" data-i18n="albums.songAyeneBidar.year"></div>
                 </div>
             </div>
         </div>
@@ -151,18 +145,15 @@
 
     <!-- Research Works -->
     <section id="research" class="section">
-        <h2 class="section-title" data-i18n="research.title">پژوهش‌ها</h2>
+        <h2 class="section-title" data-i18n="research.title"></h2>
         <div class="research-grid">
             <div class="research-card">
                 <div class="research-img">
                     <img src="darvishkhan.jpg" alt="تدوین آثار درویش‌خان">
                 </div>
                 <div class="research-content">
-                    <h3 class="research-title" data-i18n="research.work1.title">تدوین آثار درویش‌خان</h3>
-                    <p class="research-desc" data-i18n="research.work1.desc">
-                        جمع‌آوری و تدوین آثار استاد درویش‌خان، یکی از بزرگ‌ترین اساتید موسیقی ایرانی و احیاء میراث هنری
-                        ایشان برای نسل‌های آینده.
-                    </p>
+                    <h3 class="research-title" data-i18n="research.work1.title"></h3>
+                    <p class="research-desc" data-i18n="research.work1.desc"></p>
                 </div>
             </div>
 
@@ -171,24 +162,28 @@
                     <img src="note.jpg" alt="آوانگاری ردیف آوازی">
                 </div>
                 <div class="research-content">
-                    <h3 class="research-title" data-i18n="research.work2.title">آوانگاری ردیف آوازی</h3>
-                    <p class="research-desc" data-i18n="research.work2.desc">
-                        آوانگاری بخشی از ردیف آوازی استاد رامبد صدیف و ثبت نت‌های موسیقی برای حفظ امانت‌داری در انتقال
-                        این میراث ارزشمند.
-                    </p>
+                    <h3 class="research-title" data-i18n="research.work2.title"></h3>
+                    <p class="research-desc" data-i18n="research.work2.desc"></p>
                 </div>
             </div>
 
             <div class="research-card">
                 <div class="research-img">
-                    <img src="setar.jpg" alt="سازسازی سه‌تار">
+                    <img src="setar-kargah.jpeg" alt="سازسازی سه‌تار">
                 </div>
                 <div class="research-content">
-                    <h3 class="research-title" data-i18n="research.work3.title">سازسازی سه‌تار</h3>
-                    <p class="research-desc" data-i18n="research.work3.desc">
-                        تأسیس کارگاه سازسازی پس از گذراندن دوره تخصصی سه‌تار در وزارت میراث فرهنگی و گردشگری و ساخت
-                        سازهای اصیل با کیفیت بالا.
-                    </p>
+                    <h3 class="research-title" data-i18n="research.work3.title"></h3>
+                    <p class="research-desc" data-i18n="research.work3.desc"></p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-img">
+                    <img src="wood-art.jpg" alt="کارگاه ساخت حجم‌ها و عروسکهای چوبی">
+                </div>
+                <div class="research-content">
+                    <h3 class="research-title" data-i18n="research.woodwork.title"></h3>
+                    <p class="research-desc" data-i18n="research.woodwork.desc"></p>
                 </div>
             </div>
         </div>
@@ -196,17 +191,42 @@
 
     <!-- Education Section -->
     <section id="teaching" class="section">
-        <h2 class="section-title" data-i18n="classes.title">آموزش</h2>
+        <h2 class="section-title" data-i18n="classes.title"></h2>
         <div class="classes-grid">
             <div class="class-card" onclick="window.open('https://www.instagram.com/delaram_music_canada/')">
                 <div class="class-img">
                     <img src="delaram.jpg" alt="آموزشگاه دل‌آرام">
                 </div>
                 <div class="class-content">
-                    <h3 class="class-title" data-i18n="classes.work1.title">آموزشگاه دلارام</h3>
-                    <p class="class-desc" data-i18n="classes.work1.desc">
-                        آموزش تخصصی آواز و نوازندگی تار از مقدماتی تا پیشرفته، شامل تکنیک‌ها، ردیف و بداهه‌نوازی.
-                    </p>
+                    <h3 class="class-title" data-i18n="classes.delaram.title"></h3>
+                    <p class="class-desc" data-i18n="classes.delaram.desc"></p>
+                </div>
+            </div>
+            <div class="class-card" onclick="window.open('https://gooyalisting.ca/listing/ser-370/')">
+                <div class="class-img">
+                    <img src="Nazanin-Academy.jpg" alt="آکادمی نازنین">
+                </div>
+                <div class="class-content">
+                    <h3 class="class-title" data-i18n="classes.nazanin.title"></h3>
+                    <p class="class-desc" data-i18n="classes.nazanin.desc"></p>
+                </div>
+            </div>
+            <div class="class-card" onclick="window.open('https://chakadmusic.com/')">
+                <div class="class-img">
+                    <img src="chakad-logo.png" alt="آموزشگاه چکاد">
+                </div>
+                <div class="class-content">
+                    <h3 class="class-title" data-i18n="classes.chakad.title"></h3>
+                    <p class="class-desc" data-i18n="classes.chakad.desc"></p>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="class-img">
+                    <img src="ir-fani-herfei-logo.jpg" alt="آموزشگاه فنی و حرفه‌ای">
+                </div>
+                <div class="class-content">
+                    <h3 class="class-title" data-i18n="classes.tvto.title"></h3>
+                    <p class="class-desc" data-i18n="classes.tvto.desc"></p>
                 </div>
             </div>
         </div>
@@ -217,10 +237,8 @@
         <div class="quote-section">
             <div class="quote-bg"></div>
             <div class="quote-content">
-                <p class="quote-text" data-i18n="quote.text">
-                    گفتاورد
-                </p>
-                <div class="quote-author" data-i18n="quote.author">علیرضا راستین‌فر</div>
+                <p class="quote-text" data-i18n="quote.text"></p>
+                <div class="quote-author" data-i18n="quote.author"></div>
             </div>
         </div>
     </section>
@@ -228,14 +246,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
+            <!-- <div class="footer-section">
                 <h3 data-i18n="footer.institute">مؤسسه نغمه همایون راستین</h3>
-                <p data-i18n="footer.email">ایمیل: </p>
-            </div>
+                <p data-i18n="footer.email">ایمیل: info@rastin.art</p>
+            </div> -->
 
             <div class="footer-section">
-                <h3 data-i18n="footer.follow">دنبال کنید</h3>
-                <p data-i18n="footer.social">ما را در شبکه‌های اجتماعی دنبال کنید:</p>
+                <h3 data-i18n="footer.follow"></h3>
+                <p data-i18n="footer.social"></p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/rastin.alireza/"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
@@ -243,9 +261,7 @@
             </div>
         </div>
 
-        <div class="copyright" data-i18n="footer.copyright">
-            © ۱۴۰۴ - تمامی حقوق مادی و معنوی این وبسایت متعلق به مؤسسه فرهنگی هنری نغمه همایون راستین است
-        </div>
+        <div class="copyright" data-i18n="footer.copyright"></div>
     </footer>
     <script>
         // Mobile navbar toggle
