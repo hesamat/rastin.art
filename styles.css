@@ -135,7 +135,6 @@ body:not(.en) {
     font-family: var(--font-fa-body);
 }
 
-body:not(.en) h1,
 body:not(.en) h2,
 body:not(.en) h3 {
     font-family: var(--font-fa-display);
@@ -333,6 +332,7 @@ button {
 }
 
 .lang-toggle {
+    font-family: 'Vazirmatn', serif;
     background: var(--accent);
     color: var(--text-inverse);
     border: none;
@@ -393,12 +393,14 @@ button {
 }
 
 .hero-content {
+    font-family: 'Vazirmatn', serif;
     max-width: 800px;
     padding: 0 2rem;
     z-index: 1;
 }
 
 .hero h1 {
+    font-family: 'Vazirmatn', serif;
     font-size: var(--fs-hero);
     font-weight: 800;
     margin-bottom: 1rem;
@@ -407,8 +409,9 @@ button {
 }
 
 .hero-subtitle {
+    font-family: 'Vazirmatn', serif;
     font-size: var(--fs-1);
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 2rem;
     color: var(--color-ivory);
 }
