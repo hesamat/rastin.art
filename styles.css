@@ -219,6 +219,7 @@ button {
 
 /* Navbar */
 .navbar {
+    font-family: 'Vazirmatn', serif;
     background: var(--nav-bg);
     backdrop-filter: blur(var(--nav-blur));
     -webkit-backdrop-filter: blur(var(--nav-blur));
@@ -389,7 +390,14 @@ button {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    inset: 0;
+    /* stretch over entire hero */
+    background: rgba(0, 0, 0, .3);
+    z-index: -1;
+    /* sits above slides (-2) and below content (>=0/1) */
+    pointer-events: none;
+    /* don't block interactions */
 }
 
 .hero-content {
@@ -413,7 +421,7 @@ button {
     font-size: var(--fs-1);
     font-weight: 600;
     margin-bottom: 2rem;
-    color: var(--color-ivory);
+    color: var(--color-ivory) !important;
 }
 
 .carousel-indicators {
