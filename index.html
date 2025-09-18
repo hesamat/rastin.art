@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alireza Rastinfar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Crimson+Text:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/irenyekan" rel="stylesheet">
+    <!-- Consider self-hosting fonts for performance & privacy; combine subsets for fa/en -->
 
     <link rel="stylesheet" href="styles.css">
     <script src="lang.js" defer></script>
@@ -61,7 +63,7 @@
         <div class="bio-section">
             <div class="bio-content">
                 <div class="bio-image">
-                    <img src="portrait.jpeg" alt="علیرضا راستین‌فر">
+                    <img src="setar.jpg" alt="علیرضا راستین‌فر">
                 </div>
                 <div class="bio-text">
                     <h3 data-i18n="bio.title"></h3>
@@ -312,6 +314,19 @@
                     toggle.setAttribute('aria-expanded', 'false');
                 }
             });
+        })();
+
+        // Navbar scroll state
+        (function () {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            const threshold = 40; // px
+            function update() {
+                if (window.scrollY > threshold) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            }
+            window.addEventListener('scroll', update, { passive: true });
+            update();
         })();
 
         // News photo modal logic
