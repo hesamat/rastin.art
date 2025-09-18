@@ -73,14 +73,22 @@
         </div>
     </section>
 
+    <!-- Bio Modal -->
+    <div id="bioModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" style="display:none;">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" type="button" aria-label="Close" data-i18n="bio.close"></button>
+            <h3 class="modal-title" data-i18n="bio.title"></h3>
+            <p class="modal-text" data-i18n="bio.full1"></p>
+        </div>
+    </div>
+
     <!-- Events Section -->
     <section id="programs" class="section">
-        <h2 class="section-title" data-i18n="events.title"></h2>
+        <h2 class="section-title" data-i18n="events.titleMixed"></h2>
         <div class="events-grid">
             <div class="event-card">
-                <div class="event-date">
-                    <span class="event-day" data-i18n="events.event1.date"></span>
-                </div>
+                <div class="press-badge" data-i18n="events.event1.badge"></div>
                 <img src="event-1.jpeg" alt="بنیاد نیکوکاری یارا" class="event-img">
                 <div class="event-content">
                     <h3 class="event-title" data-i18n="events.event1.title"></h3>
@@ -95,11 +103,31 @@
                     </div>
                 </div>
             </div>
+            <!-- Press / Interview card mixed into events -->
+            <div class="event-card press-card">
+                <div class="press-badge" data-i18n="press.featured.badge"></div>
+                <img src="yara-interview-header.jpeg" alt="Interview" class="event-img">
+                <div class="event-content">
+                    <h3 class="event-title" data-i18n="press.featured.title"></h3>
+                    <p class="event-desc" data-i18n="press.featured.excerpt"></p>
+                    <a href="#" id="newsLink" class="bio-btn" target="_blank" rel="noopener"
+                        data-i18n="press.featured.readMore">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-
     <!-- Albums Section -->
+    <!-- News Photo Modal -->
+    <div id="newsPhotoModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" style="display:none;">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" type="button" aria-label="Close">&times;</button>
+            <img src="yara-interview.jpeg" alt="Interview"
+                style="max-width:100%;max-height:80vh;display:block;margin:auto;" />
+        </div>
+    </div>
     <section id="albums" class="section">
         <h2 class="section-title" data-i18n="albums.title"></h2>
         <div class="albums-grid">
@@ -282,6 +310,32 @@
                 if (link && navbar.classList.contains('open')) {
                     navbar.classList.remove('open');
                     toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+
+        // News photo modal logic
+        (function () {
+            const newsLink = document.getElementById('newsLink');
+            const modal = document.getElementById('newsPhotoModal');
+            const closeBtn = modal ? modal.querySelector('.modal-close') : null;
+            const backdrop = modal ? modal.querySelector('.modal-backdrop') : null;
+            if (!newsLink || !modal) return;
+
+            newsLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                modal.style.display = 'block';
+                modal.setAttribute('aria-hidden', 'false');
+            });
+            function closeModal() {
+                modal.style.display = 'none';
+                modal.setAttribute('aria-hidden', 'true');
+            }
+            closeBtn && closeBtn.addEventListener('click', closeModal);
+            backdrop && backdrop.addEventListener('click', closeModal);
+            document.addEventListener('keydown', function (e) {
+                if (modal.style.display === 'block' && (e.key === 'Escape' || e.key === 'Esc')) {
+                    closeModal();
                 }
             });
         })();

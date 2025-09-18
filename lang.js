@@ -92,27 +92,51 @@ indicators.forEach((indicator, index) => {
     });
 });
 
-// Bio modal functionality
-const bioModal = document.getElementById('bioModal');
-const bioModalBtn = document.getElementById('bioModalBtn');
-const closeBtn = document.querySelector('.close');
+// Bio modal functionality (enhanced with accessibility & safety checks)
+(() => {
+    const modal = document.getElementById('bioModal');
+    const openBtn = document.getElementById('bioModalBtn');
+    if (!modal || !openBtn) return;
+    const closeBtn = modal.querySelector('.modal-close');
+    const backdrop = modal.querySelector('.modal-backdrop');
+    const focusableSelectors = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-bioModalBtn.addEventListener('click', () => {
-    bioModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-});
-
-closeBtn.addEventListener('click', () => {
-    bioModal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-});
-
-window.addEventListener('click', (event) => {
-    if (event.target === bioModal) {
-        bioModal.style.display = 'none';
-        document.body.style.overflow = 'auto';
+    function openModal() {
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const firstFocusable = modal.querySelector(focusableSelectors);
+        firstFocusable && firstFocusable.focus();
     }
-});
+
+    function closeModal() {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+        openBtn.focus();
+    }
+
+    openBtn.addEventListener('click', openModal);
+    closeBtn && closeBtn.addEventListener('click', closeModal);
+    backdrop && backdrop.addEventListener('click', closeModal);
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+        if (e.key === 'Tab' && modal.style.display === 'block') {
+            // Basic focus trap
+            const focusable = Array.from(modal.querySelectorAll(focusableSelectors)).filter(el => !el.hasAttribute('disabled'));
+            if (focusable.length === 0) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                last.focus();
+                e.preventDefault();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                first.focus();
+                e.preventDefault();
+            }
+        }
+    });
+})();
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

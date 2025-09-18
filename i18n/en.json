@@ -14,12 +14,17 @@
     "title": "About Master Rastinfar",
     "p1": "Alireza Rastinfar is a prominent composer, performer, and master of Iranian instruments and vocals. He completed his musical education under the greatest masters of his time and learned to play the Tar from masters such as Houshang Zarif, Mohammad Reza Lotfi, Arshad Tahmasebi, Kayvan Saket, and Masoud Shariari.",
     "p2": "In the field of vocals, he learned the vocal Radif from Master Hatam Asgari Farahani and learned the subtleties of singing from Amir Sheikholeslam and Rambod Sodaif. His professional activities encompass a wide range of research, performance, education, and instrument making.",
-    "readMore": "Read More"
+    "readMore": "Read More",
+  "full1": "Alireza Rastinfar is a composer, performer and teacher of Iranian classical music. He completed his musical education under leading masters of his era. In Tar performance he benefited from: Houshang Zarif (learning the Musi Khan Maroufi notated Radif and classic instrumental repertoire and receiving a handwritten attestation), Mohammad Reza Lotfi (studying the Mirza Abdollah Radif), Arshad Tahmasebi (Mirza Abdollah Radif again in greater detail, Abdollah Davami's Radif and tasnifs, old instrumental pieces and works of Hossein Alizadeh with written endorsement), Kayvan Saket (selected Ali Naqi Vaziri compositions and a full Radif cycle) and Masoud Shahriari (pieces by Hossein Alizadeh, Yusef Foroutan, Saeed Hormozi, Darvish Khan and Abolhasan Saba).\n\nHe also studied with Master Majid Kiani learning the Mirza Abdollah Santur Radif and pieces by Habib Samaei (receiving a written approval). In addition, for two years he became acquainted with the majlesi (gathering) repertoires of the Tanbur under Master Moradi.\n\nIn the vocal field he learned the old vocal Radif from Master Hatam Asgari Farahani and obtained his written endorsement, and absorbed vocal subtleties from Amir Sheikholeslam and Rambod Sadaif.\n\nHis professional activities are wide-ranging. As a researcher he has compiled and organized the works of Darvish Khan and notated a portion of Master Rambod Sadaif's vocal Radif. He participated in efforts connected with the inscription of the National Iranian Radif at UNESCO. Other experience includes three years of collaboration with Radio Farhang (Culture Radio) producing and performing for the weekly program “Dar Mahzare Ostād” (In the Presence of the Master), directing a music center within a cultural organization of Tehran Municipality, and organizing numerous scholarly gatherings.\n\nRastinfar completed an advanced Setar-making course at the Ministry of Cultural Heritage, Tourism and Handicrafts and, after obtaining the required license, founded his own instrument workshop.\n\nAs a composer, instrumentalist and vocalist he has appeared in numerous concerts inside and outside Iran and performed in albums including “Dar Masir-e Faslha” (In the Path of Seasons), “Gomgashteh” (The Lost), “Hekayat-e Eshq” (Tale of Love) and “Shab o Khamooshi” (Night and Silence).\n\nTo advance educational and artistic aims he established the “Nagmeh Homayoun Rastin” Cultural & Artistic Institute and the separate “Rastinfar Music Academy”. He teaches at reputable music schools. His method is structured through categorized files of the instrumental and vocal Radif across beginner, intermediate and advanced levels, integrating tasnifs, rengs and chaharmezrabs. In class he emphasizes authentic content and the living spirit of the Radif, analytical comparison of instrumental and vocal pathways, shared tetrachords (dangs), and acquaints students with the history and philosophy of Iranian music.",
+    "full2": "In instrument craftsmanship he emphasizes tonal nuance, wood selection, and acoustic proportion, producing instruments with both responsiveness and authentic resonance. His pedagogy centers on ear training, internal phrasing, and a deep integration of rhythm and poetry.",
+    "close": "Close"
   },
   "events": {
-    "title": "Events",
+    "title": "News",
+    "titleMixed": "News",
     "event1": {
       "title": "Yara Charity Foundation",
+      "badge": "Performance",
       "desc": "",
       "location": "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
       "date": "14 September 2025",
@@ -81,5 +86,14 @@
     "follow": "Follow Us",
     "social": "Follow us on social media:",
     "copyright": "© 2025 - All material and intellectual rights of this website belong to Naghmeh Homayoon Rastin Cultural Institute"
+  },
+  "press": {
+    "title": "Press & Interviews",
+    "featured": {
+      "badge": "Interview",
+      "title": "Recent Interview with Music Magazine",
+      "excerpt": "A conversation about artistic journey, revival of Radif, and a modern perspective on instrument craftsmanship.",
+      "readMore": "View Details"
+    }
   }
 }

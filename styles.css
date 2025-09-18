@@ -460,7 +460,6 @@ body.en {
 }
 
 .event-day {
-    font-size: 1.2rem;
     display: block;
 }
 
@@ -493,7 +492,6 @@ body.en {
 .event-location {
     display: flex;
     align-items: center;
-    color: var(--accent);
     margin-bottom: 0.5rem;
 }
 
@@ -504,7 +502,6 @@ body.en {
 .event-time {
     display: flex;
     align-items: center;
-    color: var(--accent);
 }
 
 .event-time i {
@@ -570,7 +567,6 @@ body.en {
 }
 
 .news-date {
-    color: var(--accent);
     font-size: 0.9rem;
     display: flex;
     align-items: center;
@@ -647,7 +643,6 @@ body.en {
 
 .album-year {
     font-size: 0.9rem;
-    color: var(--accent);
     font-weight: 500;
 }
 
@@ -931,4 +926,85 @@ body.en {
     .quote-text {
         font-size: 1.4rem;
     }
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: none;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 800px;
+    margin: 5vh auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, .3);
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+}
+
+.modal-text {
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    color: #444;
+    font-size: 1.05rem;
+    white-space: pre-line;
+    /* Preserve newlines from i18n biography text */
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    inset-inline-end: 12px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: #5A7A4E;
+}
+
+/* Press badge inside event card */
+.press-card {
+    border: 1px solid rgba(212, 165, 116, 0.4);
+}
+
+.press-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 0.35rem .9rem;
+    border-radius: 18px;
+    font-size: .75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
