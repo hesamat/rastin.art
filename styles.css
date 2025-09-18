@@ -505,7 +505,8 @@ button {
     margin-bottom: .9rem;
 }
 
-.bio-btn {
+.bio-btn,
+.readmore-btn {
     display: inline-block;
     background: var(--secondary);
     color: var(--text-inverse);
@@ -519,6 +520,16 @@ button {
     cursor: pointer;
     letter-spacing: .5px;
     box-shadow: 0 6px 18px -6px var(--color-shadow);
+}
+
+.readmore-btn:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px -6px var(--color-shadow-strong);
+}
+
+.readmore-btn:active {
+    transform: translateY(-1px);
 }
 
 .bio-btn:hover {
