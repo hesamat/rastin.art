@@ -22,12 +22,19 @@
     "title": "News",
     "titleMixed": "News",
     "event1": {
-      "title": "Yara Charity Foundation",
+      "title": "Yara Charity Foundation Performance",
       "badge": "Performance",
       "desc": "",
       "location": "Lily Lee Spirit Room, 2121 Marine Dr, West Vancouver",
       "date": "14 September 2025",
       "time": "18:00 - 20:00"
+    },
+    "event2": {
+      "title": "Sedaye Sokhane Eshgh",
+      "badge": "Performance",
+      "desc": "",
+      "location": "Evergreen Cultural Centre, Coquitlam",
+      "date": "5 October 2025"
     }
   },
   "albums": {
@@ -62,6 +69,10 @@
     "title": "Teaching",
     "delaram": {
       "title": "Delaram Music Vancouver",
+      "desc": "Specialized training in vocals and Tar & Setar from beginner to advanced levels including techniques, Radif and improvisation."
+    },
+    "edoliza": {
+      "title": "Edoliza Canada",
       "desc": "Specialized training in vocals and Tar & Setar from beginner to advanced levels including techniques, Radif and improvisation."
     },
     "nazanin": {
