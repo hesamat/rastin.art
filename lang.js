@@ -1,14 +1,17 @@
 // Dynamic translation loader (external JSON files in /i18n)
 const langToggle = document.getElementById('langToggle');
 const htmlElement = document.documentElement;
-let currentLang = 'fa';
+// Detect if current route is "/en/..."
+const firstPathSegment = (window.location.pathname || '/').replace(/\/+$/, '/').split('/').filter(Boolean)[0] || '';
+const isEnRoute = firstPathSegment === 'en';
+let currentLang = isEnRoute ? 'en' : 'fa';
 const translationCache = {};
 const DEFAULT_LANG = 'fa';
 
 async function loadTranslations(lang) {
     if (translationCache[lang]) return translationCache[lang];
     try {
-        const res = await fetch(`i18n/${lang}.json`, { cache: 'no-store' });
+        const res = await fetch(`/i18n/${lang}.json`, { cache: 'no-store' });
         if (!res.ok) throw new Error('Failed to load translation file');
         const json = await res.json();
         translationCache[lang] = json;
@@ -53,8 +56,14 @@ async function updateLanguage(lang) {
 
 if (langToggle) {
     langToggle.addEventListener('click', () => {
-        const newLang = currentLang === 'fa' ? 'en' : 'fa';
-        updateLanguage(newLang);
+        const hash = window.location.hash || '';
+        if (isEnRoute) {
+            // Go to root Persian route
+            window.location.href = `/${hash}`;
+        } else {
+            // Go to English route
+            window.location.href = `/en/${hash}`;
+        }
     });
 }
 
