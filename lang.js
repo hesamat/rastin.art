@@ -42,13 +42,31 @@ async function updateLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         const value = resolveKey(translations, key);
+        const attrTarget = el.getAttribute('data-i18n-attr');
         if (typeof value === 'string') {
-            el.textContent = value;
+            if (attrTarget) {
+                el.setAttribute(attrTarget, value);
+            } else {
+                // Allow limited HTML for specific, safe containers (e.g., modal text)
+                if (el.hasAttribute('data-i18n-html') || el.classList.contains('modal-text')) {
+                    el.innerHTML = value;
+                } else {
+                    el.textContent = value;
+                }
+            }
         } else {
             // Attempt fallback if missing in current language
             if (lang !== DEFAULT_LANG) {
                 const fallback = resolveKey(translationCache[DEFAULT_LANG] || {}, key);
-                if (fallback) el.textContent = fallback;
+                if (typeof fallback === 'string') {
+                    if (attrTarget) {
+                        el.setAttribute(attrTarget, fallback);
+                    } else if (el.hasAttribute('data-i18n-html') || el.classList.contains('modal-text')) {
+                        el.innerHTML = fallback;
+                    } else {
+                        el.textContent = fallback;
+                    }
+                }
             }
         }
     });
